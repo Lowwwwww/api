@@ -1,0 +1,11 @@
+{
+  "name": "perfumariaapi",
+  "version": "1.0.0",
+  "description": "projeto para controlar o estoque de uma perfumaria.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cleiton Eduardo Correa",
+  "license": "ISC"
+}
