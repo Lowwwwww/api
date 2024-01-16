@@ -3,12 +3,7 @@ const app = express();
 
 // Configuração do Firebase
 const admin = require('firebase-admin');
-const serviceAccount = require('./caminho/para/seu/firebase-service-account.json');
-
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
-  databaseURL: 'https://sua-firebase-database-url.firebaseio.com'
-});
+const serviceAccount = require('.\\Users\\cleiton_e_correa\\Documents\\Entra_21\\perfumariaApi\\serviceAccountKey.json');
 
 // Middlewares
 app.use(express.json());
