@@ -3,7 +3,7 @@ const app = express();
 
 // Configuração do Firebase
 const admin = require('firebase-admin');
-const serviceAccount = require('.\\Users\\cleiton_e_correa\\Documents\\Entra_21\\perfumariaApi\\serviceAccountKey.json');
+const serviceAccount = require('C:\\Users\\cleiton_e_correa\\Documents\\Entra_21\\perfumariaApi\\serviceAccountKey.json');
 
 // Middlewares
 app.use(express.json());
