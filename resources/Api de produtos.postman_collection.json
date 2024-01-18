@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "67bb400f-cc68-4e4d-af8a-c73f3895d6a1",
+		"name": "Api de produtos",
+		"description": "API de produtos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32374663"
+	},
+	"item": [
+		{
+			"name": "Criar produto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome_produto\": \"Calvin Klein\",\r\n    \"descricao\": \"Perfume Ck Be Edt 200Ml\",\r\n    \"preco_unitario\": 237.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/produtos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obter Todos os Produtos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/produtos?jrjifGrFyN5NtQrW8h8u&WrfN4nZxxFuKqr4I0m8N&QukQk9dJ06BI2DTZlQSb&tOPyo3cBV16z6EnFFO7N&3ATe7vLMEzMzSIebdUUj&UGLUqFzl7GzDd5KxNRqR&mNMqxlbhCo32vDwE5obj&7FFCg9o111xR7s8fyDPt&20uKCjtd2UGhdwxAUGfy&j64VdEpsUdbZnlMWufCG",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"produtos"
+					],
+					"query": [
+						{
+							"key": "jrjifGrFyN5NtQrW8h8u",
+							"value": null
+						},
+						{
+							"key": "WrfN4nZxxFuKqr4I0m8N",
+							"value": null
+						},
+						{
+							"key": "QukQk9dJ06BI2DTZlQSb",
+							"value": null
+						},
+						{
+							"key": "tOPyo3cBV16z6EnFFO7N",
+							"value": null
+						},
+						{
+							"key": "3ATe7vLMEzMzSIebdUUj",
+							"value": null
+						},
+						{
+							"key": "UGLUqFzl7GzDd5KxNRqR",
+							"value": null
+						},
+						{
+							"key": "mNMqxlbhCo32vDwE5obj",
+							"value": null
+						},
+						{
+							"key": "7FFCg9o111xR7s8fyDPt",
+							"value": null
+						},
+						{
+							"key": "20uKCjtd2UGhdwxAUGfy",
+							"value": null
+						},
+						{
+							"key": "j64VdEpsUdbZnlMWufCG",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obter Produto por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/produtos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Produto",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/produtos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Produto",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/produtos/DKbwZSfCNCt5plyNXBMG",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"produtos",
+						"DKbwZSfCNCt5plyNXBMG"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
