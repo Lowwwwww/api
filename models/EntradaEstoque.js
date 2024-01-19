@@ -6,6 +6,3 @@ class EntradaEstoque {
         this.data_entrada = data_entrada;
     }
 }
-
-const entrada1 = new EntradaEstoque(1, 101, 50, '2024-01-19');
-console.log(entrada1);
