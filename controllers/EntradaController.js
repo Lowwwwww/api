@@ -6,7 +6,18 @@ const EntradaController = {
         try {
             const entradaRef = db.collection('entradas').doc();
             await entradaRef.set(req.body);
-            res.status(201).json({ id: entradaRef.id, ...req.body });
+
+            const produtoRef = db.collection('produtos').doc(req.params.id);
+            doc = await produtoRef.get();
+            const nome = doc.data().nome_produto
+
+            if(!doc.exists){
+                res.status(404).json('Produto não encontrado!')
+            }else{
+                res.status(201).json({ idProduto: doc.id, nomeProduto: nome, id: entradaRef.id, ...req.body });
+            }
+
+            
         } catch (error) {
             res.status(500).send(error.message);
         }
