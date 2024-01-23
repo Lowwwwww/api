@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "30fa927b-3000-4265-b0b9-f191c49705f6",
+		"name": "Api de entradas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32374663"
+	},
+	"item": [
+		{
+			"name": "Criar entrada",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "     {        \r\n        \"quantidade\": \"500\",\r\n        \"data_entrada\": \"2024-01-05\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/entradas/cVHprFKSikMpJNqQw8Ty",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"entradas",
+						"cVHprFKSikMpJNqQw8Ty"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obter todos as entradas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/entradas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"entradas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obter entradas por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/entradas/H0OHVKofZ6BEFHxIMWHT",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"entradas",
+						"H0OHVKofZ6BEFHxIMWHT"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar entrada",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/entradas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"entradas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar entrada",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/entradas/0JI7DzFDCdrLFtTzWbSF",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"entradas",
+						"0JI7DzFDCdrLFtTzWbSF"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
