@@ -94,5 +94,4 @@ npm install
    - Deleta uma saída específica do estoque.
    - Endpoint para remover uma saída.
 
-### Contato
-Para obter suporte ou fazer perguntas, entre em contato através do [augusto.persuhn@gmail.com].
+
