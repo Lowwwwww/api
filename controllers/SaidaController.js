@@ -1,6 +1,5 @@
 const db = require('../firebaseConfig');
 
-
 const SaidaController = {
     createSaida: async (req, res) => {
         try {
